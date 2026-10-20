@@ -335,6 +335,23 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
   .person .li{grid-column:2;justify-self:start;margin:8px 0 0}
 }
 
+
+/* v8: lever tabs centred and larger, odd last item full width, 3-letter initials */
+.lever{align-content:center;align-items:center;padding:30px 30px 32px}
+.lv-bar{bottom:16px}
+.lv-num{padding-top:0;align-self:start;margin-top:10px}
+.lv-txt b{font-size:clamp(28px,2.6vw,38px)}
+.lv-txt small{font-size:17px;margin-top:8px}
+.lv-items li{font-size:16px}
+.lv-items li:last-child:nth-child(odd){grid-column:1/-1}
+.photo span{font-size:38px}
+@media (max-width:900px){
+  .lever{padding:14px 18px 18px}
+  .lv-num{margin-top:0}
+  .lv-txt b{font-size:16px}
+  .photo span{font-size:18px}
+}
+
 @media (max-width:900px){
   .nav ul{display:none}
   .wrap{padding:0 20px}
@@ -431,6 +448,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
           <li style="--i:0"><span class="it-n">01</span><span>Step in as interim general manager or deputy CEO</span></li>
           <li style="--i:1"><span class="it-n">02</span><span>Prepare and de-risk leadership transitions</span></li>
           <li style="--i:2"><span class="it-n">03</span><span>Run governance with boards and shareholders</span></li>
+          <li style="--i:3"><span class="it-n">04</span><span>Own the P&amp;L, budget and reporting to owners and investors</span></li>
         </ul>
       </div>
       <div class="lv-panel" role="tabpanel" id="lv-panel-1" aria-labelledby="lv-tab-1">
@@ -544,11 +562,11 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
       </dl>
     </article>
     <article class="card">
-      <div class="metric">€1.15M</div><div class="mlabel">signed in H1 2026</div>
+      <div class="metric">€37K</div><div class="mlabel">average deal, up from €16–20K</div>
       <h3>B2B scale-up</h3><div class="ctx">Connected devices</div>
       <dl class="facts">
-        <div><dt>Mandate</dt><dd>Repositioned from hardware rental to a service and data offer, launched outbound from zero</dd></div>
-        <div><dt>Result</dt><dd>€1.15M signed in H1 2026, €600K already signed for next year, deal size from €16–20K to €37K</dd></div>
+        <div><dt>Mandate</dt><dd>Reposition the offer from hardware rental to service, and launch outbound from zero</dd></div>
+        <div><dt>Result</dt><dd>Average deal size doubled, forecast within ±15%, 14 qualified meetings by month two</dd></div>
         <div><dt>Scale</dt><dd>9 people, 12 countries</dd></div>
       </dl>
     </article>
@@ -569,7 +587,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
   </div>
   <div class="people">
     <article class="person rv">
-      <div class="photo"><span>MP</span><small>Photo to come</small></div>
+      <div class="photo"><span>MPO</span></div>
       <div class="body">
         <h3>Marvin Pottier</h3>
         <span class="role">Entrepreneur, sales and growth</span>
@@ -580,7 +598,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
       </div>
     </article>
     <article class="person rv d1">
-      <div class="photo"><span>VV</span><small>Photo to come</small></div>
+      <div class="photo"><span>VVA</span></div>
       <div class="body">
         <h3>Virginie Vanhouche</h3>
         <span class="role">Operations and organisation</span>
