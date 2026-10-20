@@ -357,6 +357,13 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
   .photo span{font-size:18px}
 }
 
+
+/* v10: light logo in the nav */
+.brand{display:inline-flex;align-items:center;gap:12px}
+.brand .logo{width:44px;height:44px;border-radius:9px;box-shadow:0 0 0 1px rgba(246,248,237,.12)}
+.nav.solid:not(.dark) .brand .logo{box-shadow:0 0 0 1px var(--line)}
+@media (max-width:900px){.brand .logo{width:38px;height:38px}}
+
 @media (max-width:900px){
   .nav ul{display:none}
   .wrap{padding:0 20px}
@@ -375,7 +382,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
 <body>
 
 <nav class="nav" id="nav"><div class="wrap">
-  <a href="#home" class="brand">Wizenko <i>Partners</i></a>
+  <a href="#home" class="brand"><img class="logo" src="logo-light.png" width="44" height="44" alt=""><span>Wizenko <i>Partners</i></span></a>
   <ul>
     <li><a href="#what">What we do</a></li>
     <li><a href="#how">How we work</a></li>
