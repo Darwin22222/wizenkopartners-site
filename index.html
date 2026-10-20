@@ -315,6 +315,26 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
   .names li{font-size:18px}
 }
 
+
+/* v7: mobile fixes (references gap, partners header) + LinkedIn */
+.li{display:inline-flex;align-items:center;gap:6px;margin-left:8px;font-size:13.5px;font-weight:600;color:var(--green);text-decoration:none;vertical-align:middle}
+.li:hover{text-decoration:underline}
+.li svg{width:15px;height:15px}
+@media (max-width:900px){
+  .track{align-items:flex-start}
+  .facts{margin-top:22px;padding-top:0}
+  .person{grid-template-columns:64px 1fr;gap:0 16px;padding:24px 22px;align-items:center}
+  .photo{width:64px;height:64px;min-height:0;border-radius:50%;grid-row:1/4;align-self:start}
+  .photo span{font-size:22px;letter-spacing:-.02em}
+  .photo small{display:none}
+  .person .body{display:contents}
+  .person h3{grid-column:2;font-size:22px}
+  .person .role{grid-column:2;justify-self:start;margin:8px 0 0}
+  .person .body p{grid-column:1/-1;text-align:left;hyphens:manual;margin-top:14px}
+  .person .body p + p{margin-top:8px}
+  .person .li{grid-column:2;justify-self:start;margin:8px 0 0}
+}
+
 @media (max-width:900px){
   .nav ul{display:none}
   .wrap{padding:0 20px}
@@ -553,6 +573,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
       <div class="body">
         <h3>Marvin Pottier</h3>
         <span class="role">Entrepreneur, sales and growth</span>
+        <a class="li" href="https://www.linkedin.com/in/marvinpottier/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.91 1.3-1.91 2.63V21h-4z"/></svg>LinkedIn</a>
         <p>Builds companies, then the engines that make them sell. Took a consulting subsidiary from zero to €12M in four years, co-founded Naki and raised €7M to take it across 5 countries, and trained managers across Europe for the Mantu group.</p>
         <p>MSc from emlyon and LMU Munich.</p>
         <p>Ultramarathon runner, judo black belt.</p>
@@ -563,6 +584,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--paper)}
       <div class="body">
         <h3>Virginie Vanhouche</h3>
         <span class="role">Operations and organisation</span>
+        <a class="li" href="https://www.linkedin.com/in/virginie-vanhouche/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.91 1.3-1.91 2.63V21h-4z"/></svg>LinkedIn</a>
         <p>Scales organisations by structuring them: processes, governance, people and numbers.</p>
         <p>Has grown teams from 0 to 90+ in technical and institutional environments.</p>
         <p>Former Deputy Director at CCI France Belgique, she now runs industrial cybersecurity and automation for an industrial engineering SME.</p>
